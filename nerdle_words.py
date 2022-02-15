@@ -5,6 +5,8 @@ Generate strings of expressions that are mathematically correct and has the leng
 
 import itertools
 
+__author__ = "Z Feng"
+
 digits = [str(i) for i in range(10)]
 two_digits = [''.join(i) for i in itertools.product(digits, repeat=2)]
 three_digits = [''.join(i) for i in itertools.product(digits, repeat=3)]
@@ -62,4 +64,4 @@ with open('nerdle_words.txt', 'w') as f:
 	for e in expr_len_8:
 		f.write(e + '\n')
 
-
+# EOF
